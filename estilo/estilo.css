@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html,body{
+    height: 100%;
+}
+
+.pattern{
+        width: 100%;
+        height: 100%;
+        --color: rgba(0, 12, 146, 0.177);
+        background: rgb(10, 0, 44);
+        background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+            linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+        background-size: 55px 55px;    
+}
+
+body{
+
+    /* background: rgb(7,0,32);
+    background: linear-gradient(180deg, rgba(7,0,32,1) 0%, rgba(14,0,66,1) 70%);     */
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.main-title{
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.list-wrapper{
+    position: relative;
+    z-index: 1;
+    background-color: rgb(75, 25, 255);
+    width: 90%;
+    max-width: 600px;
+    max-height: 400px;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: -7px 7px 14px -5px rgba(0,0,0,0.57);
+-webkit-box-shadow: -7px 7px 14px -5px rgba(0,0,0,0.57);
+-moz-box-shadow: -7px 7px 14px -5px rgba(0,0,0,0.57);
+}
+
+
+.list{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item{
+    color: aliceblue;
+    display: flex;
+    border-bottom: 1px solid rgb(137, 105, 250);
+    padding: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.list-item:hover{
+    background-color: rgb(98, 55, 255);
+}
+
+.list-item__imagem img{
+    border-radius: 100%;
+    height: 90px;
+}
+
+.list-item__content{
+    margin-top: 5px;
+    padding: 0 25px;
+
+    flex-grow: 1;
+}
+
+.list-item__name{
+    margin: 0;
+    
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.list-item__email{
+    margin: 5px 0 0;
+    color: rgb(168, 144, 255);
+}
+
+
+.list-item__action img{
+    margin-top: 5px;
+    height: 16px;
+}
+.list-item__action{
+    opacity: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.2s ease-in-out;
+}
+
+.list-item:hover .list-item__action {
+
+    transition: 0.2s ease-in-out;
+    display: flex;
+    opacity: 100%;
+}
+
+
+.form-back{
+
+    z-index: 0;
+    position: absolute;
+
+    margin-top: 180px;
+    margin-right: 30px;
+
+    background-color: aliceblue;
+    
+    width: 90%;
+    max-width: 600px;
+    height: 380px;
+
+    border-radius: 2%;
+}
